@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wishies</title>
+  <style>
+    /* Reset & base */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Background image from Unsplash (free to use) */
+      background: url('https://source.unsplash.com/1600x900/?gift-opening,delight') 
+                  no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    /* Dark overlay so text pops */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+    /* Content front-and-center */
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      max-width: 90%;
+    }
+    /* Responsive type */
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Wishies</h1>
+    <h2>Making Wishes Come True</h2>
+    <p>Coming Soon</p>
+  </div>
+</body>
+</html>
